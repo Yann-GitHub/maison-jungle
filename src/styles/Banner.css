@@ -6,11 +6,12 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
 }
 
 .lmj-title {
   padding-left: 32px;
+  padding-right: 32px;
 }
 
 .lmj-logo {

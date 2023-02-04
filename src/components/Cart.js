@@ -7,9 +7,13 @@ function Cart({ cart, updateCart }) {
     (acc, plantType) => acc + plantType.amount * plantType.price,
     0
   );
+
   useEffect(() => {
-    alert(`J'aurai ${total}€ à payer 💸`);
-  });
+    document.title = `LMJ: ${total}€ d'achats`;
+  }, [total]);
+  // useEffect(() => {
+  //   alert(`J'aurai ${total}€ à payer 💸`);
+  // });
   // alert(`J'aurai ${total}€ à payer 💸`);
 
   return isOpen ? (
